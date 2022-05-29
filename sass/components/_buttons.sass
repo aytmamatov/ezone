@@ -8,15 +8,24 @@
   background: var(--e-color-purple)
   border-radius: 10px
   padding: 18.5px 50px
+  z-index: 2
 
-  &::after
+  &::before, &::after
     content: ''
     position: absolute
-    top: 10px
-    left: 10px
+    top: 0
+    left: 0
     width: 100%
     height: 100%
-    background: var(--e-color-green)
     transition: opacity 0.3s ease-in-out
-    z-index: -1
     border-radius: inherit
+
+  &::before
+    background: var(--e-color-purple)
+    z-index: -1
+
+  &::after
+    top: 10px
+    left: 10px
+    background: var(--e-color-green)
+    z-index: -2
