@@ -1,0 +1,48 @@
+.reviews
+  padding: 100px 0
+
+  &__container
+    text-align: center
+
+  &__title
+    margin-bottom: 100px
+
+  &__wrapper
+    display: flex
+    justify-content: space-between
+
+.review
+  &__block
+    display: flex
+    flex-direction: column
+    font-size: var(--e-font-size-md)
+    font-weight: 700
+    line-height: 1.175
+
+    &-video
+      display: flex
+      align-items: center
+      justify-content: center
+      border: 2px dashed var(--e-color-purple)
+      border-radius: 50%
+      overflow: hidden
+      min-width: 310px
+      min-height: 310px
+      margin-bottom: 20px
+
+    &-text
+      color: var(--e-color-black)
+      text-transform: uppercase
+
+    &-name
+      color: var(--e-color-purple)
+      margin-bottom: 10px
+
+    &-age
+      font-weight: 500
+      margin-bottom: 10px
+
+    &-duration
+      font-weight: 500
+      font-size: var(--e-font-size-sm-x)
+      color: var(--e-color-dark-grey)
