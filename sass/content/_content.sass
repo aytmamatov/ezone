@@ -1,0 +1,54 @@
+.content
+  display: flex
+
+  &__left-side,
+  &__right-side
+    width: 50%
+
+  &__left-side
+
+  &__left
+    &-title
+      margin-bottom: 40px
+
+    &-block
+      padding: 200px 0 0 70px
+
+    &-btn
+      color: var(--q-color-black)
+      background: var(--e-color-purple)
+
+      &::before
+        background: var(--e-color-green)
+
+      &::after
+        background: var(--e-color-purple)
+
+  &__right-side
+    background-color: var(--e-color-purple)
+    color: var(--e-color-white)
+
+  &__right
+    &-card
+      padding: 120px 0 20px 0
+      max-width: 480px
+      display: flex
+      flex-direction: column
+      margin: 0 auto
+
+    &-text
+      text-transform: uppercase
+      font-weight: 700
+      font-size: 40px
+      line-height: 1.175
+      margin-bottom: 30px
+
+    &-definition
+      color: var(--e-color-green)
+      font-weight: 700
+      font-size: 48px
+      line-height: 1.16
+      margin-bottom: 38px
+
+    &-img
+      border-radius: 10px
