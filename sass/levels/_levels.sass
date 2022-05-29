@@ -1,0 +1,76 @@
+.levels
+  padding: 40px 0 186px 0
+  background-color: var(--e-color-black)
+
+  &__container
+    max-width: 1010px
+    text-align: center
+
+  &__title
+    margin-bottom: 90px
+
+  &__wrapper
+    display: flex
+    justify-content: center
+    flex-wrap: wrap
+    margin: 0 -20px
+
+.level
+  padding: 8px
+  position: relative
+  max-width: 310px
+  min-width: 310px
+  min-height: 310px
+  border: 2px dashed var(--e-color-purple)
+  border-radius: 50%
+  font-weight: 700
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  transition: .3s ease
+  margin-right: 20px
+
+  &:hover
+    background: var(--e-color-green)
+
+    .level
+      &__name
+        color: var(--e-color-purple)
+
+      &__img,
+      &__description
+        position: relative
+        top: 0
+        left: 0
+        visibility: visible
+        transition: .3s ease
+
+  &__name
+    font-size: 30px
+    line-height: 1.16
+    text-transform: uppercase
+    color: var(--e-color-green)
+    margin-bottom: 10px
+
+  &__img
+    max-width: 132px
+    max-height: 132px
+    border-radius: 50%
+    margin-bottom: 10px
+
+  &__description
+    max-width: 230px
+    font-size: var(--e-font-size-sm)
+    line-height: 1.12
+    color: var(--e-color-black)
+
+  &__img,
+  &__description
+    transition: .3s ease
+    overflow: hidden
+    position: absolute
+    top: -100%
+    left: -100%
+    visibility: hidden
