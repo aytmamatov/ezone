@@ -261,6 +261,7 @@ body {
 }
 
 .content__left-btn {
+  display: block;
   color: var(--q-color-black);
   background: var(--e-color-purple);
 }
