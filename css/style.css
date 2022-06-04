@@ -546,4 +546,12 @@ body {
   border-radius: 20px;
   overflow: hidden;
 }
+
+.map {
+  margin-bottom: 60px;
+}
+
+.map__title {
+  margin-bottom: 80px;
+}
 /*# sourceMappingURL=style.css.map */
