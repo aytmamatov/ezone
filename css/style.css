@@ -9,6 +9,7 @@
   --e-color-purple: #6300FC;
   --e-color-green: #B6FF11;
   --e-color-dark-grey: #828282;
+  --e-color-pink: rgba(99, 0, 252, 0.2);
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -484,5 +485,65 @@ body {
   font-weight: 500;
   font-size: var(--e-font-size-sm-x);
   color: var(--e-color-dark-grey);
+}
+
+.moderators {
+  margin-bottom: 180px;
+}
+
+.moderators__title {
+  margin-bottom: 76px;
+}
+
+.moderators__cards {
+  overflow: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.moderator {
+  position: relative;
+}
+
+.moderator__img {
+  min-width: 240px;
+  max-width: 240px;
+  max-height: 400px;
+}
+
+.moderator__name {
+  font-weight: 700;
+  font-size: 110px;
+  text-transform: uppercase;
+  color: var(--e-color-pink);
+  -webkit-writing-mode: vertical-lr;
+      -ms-writing-mode: tb-lr;
+          writing-mode: vertical-lr;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  border-left: 9px solid var(--e-color-pink);
+}
+
+.moderator__card {
+  padding: 8px;
+  min-width: 310px;
+  max-width: 310px;
+  min-height: 482px;
+  max-height: 500px;
+  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: var(--e-color-white);
+  border: 1px solid #141414;
+  border-radius: 20px;
+  overflow: hidden;
 }
 /*# sourceMappingURL=style.css.map */
