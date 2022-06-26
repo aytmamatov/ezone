@@ -11,8 +11,19 @@
     display: flex
     justify-content: space-between
 
+    @media (max-width: 1415px)
+      flex-wrap: wrap
+
 .review
+  @media (max-width: 1415px)
+    width: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    margin-bottom: 30px
+
   &__block
+    max-width: 314px
     display: flex
     flex-direction: column
     font-size: var(--e-font-size-md)
