@@ -292,6 +292,16 @@ body {
   margin: 0 auto;
 }
 
+.content__right-card:nth-child(1) img {
+  min-width: 451px;
+  min-height: 420px;
+}
+
+.content__right-card:nth-child(3) img {
+  min-width: 375px;
+  min-height: 375px;
+}
+
 .content__right-text {
   text-transform: uppercase;
   font-weight: 700;
