@@ -6,8 +6,10 @@
     align-items: start
     justify-content: space-between
 
-  &__panel
+  &__accordion
     position: relative
+
+  &__panel
     min-width: 545px
     max-width: 545px
     padding: 31px 0
@@ -22,7 +24,9 @@
       border-bottom: 2px solid var(--e-color-green)
 
       .faq__text
-        display: block
+        transition: .3s opacity linear
+        position: relative
+        opacity: 1
 
     &:not(&--active)
       border-bottom: none
@@ -41,7 +45,10 @@
     font-weight: 500
 
   &__text
-    display: none
+    position: absolute
+    top: 0
+    left: 0
+    opacity: 0
     max-width: 374px
     padding-top: 20px
     font-size: 20px

@@ -586,8 +586,11 @@ body {
           justify-content: space-between;
 }
 
-.faq__panel {
+.faq__accordion {
   position: relative;
+}
+
+.faq__panel {
   min-width: 545px;
   max-width: 545px;
   padding: 31px 0;
@@ -605,7 +608,10 @@ body {
 }
 
 .faq__panel--active .faq__text {
-  display: block;
+  -webkit-transition: .3s opacity linear;
+  transition: .3s opacity linear;
+  position: relative;
+  opacity: 1;
 }
 
 .faq__panel:not(.faq__panel--active) {
@@ -633,7 +639,10 @@ body {
 }
 
 .faq__text {
-  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
   max-width: 374px;
   padding-top: 20px;
   font-size: 20px;
