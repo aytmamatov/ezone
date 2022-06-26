@@ -248,12 +248,16 @@ body {
   position: relative;
 }
 
+.content__left {
+  padding: 20px 0;
+}
+
 .content__left-title {
   margin-bottom: 40px;
 }
 
 .content__left-block {
-  padding: 200px 0 0 70px;
+  padding: 200px 0 70px 70px;
   position: -webkit-sticky;
   position: sticky;
   top: 0;
