@@ -626,6 +626,7 @@ body {
   transition: .3s opacity linear;
   position: relative;
   opacity: 1;
+  visibility: visible;
 }
 
 .faq__issue {
@@ -647,6 +648,7 @@ body {
   top: 0;
   left: 0;
   opacity: 0;
+  visibility: hidden;
   max-width: 374px;
   padding-top: 20px;
   font-size: 20px;
