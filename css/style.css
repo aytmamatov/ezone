@@ -430,7 +430,21 @@ body {
 }
 
 .reviews {
+  position: relative;
   padding: 100px 0;
+}
+
+.reviews::before {
+  content: '';
+  position: absolute;
+  top: -241px;
+  left: 143px;
+  width: 443px;
+  height: 483px;
+  background: rgba(126, 252, 0, 0.3);
+  -webkit-filter: blur(200px);
+          filter: blur(200px);
+  z-index: -1;
 }
 
 .reviews__container {

@@ -1,5 +1,17 @@
 .reviews
+  position: relative
   padding: 100px 0
+
+  &::before
+    content: ''
+    position: absolute
+    top: -241px
+    left: 143px
+    width: 443px
+    height: 483px
+    background: rgba(126, 252, 0, 0.3)
+    filter: blur(200px)
+    z-index: -1
 
   &__container
     text-align: center
