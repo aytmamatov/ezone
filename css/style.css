@@ -202,6 +202,7 @@ body {
 }
 
 .content {
+  background: url("../../images/content/content_bg.jpeg");
   display: flex;
 }
 .content__left-side, .content__right-side {
