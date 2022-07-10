@@ -125,26 +125,9 @@ body {
 }
 .header__container {
   min-height: inherit;
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-.header__container::before, .header__container::after {
-  content: "";
-  position: absolute;
-  bottom: 36px;
-  min-width: 310px;
-  min-height: 310px;
-  border: 2px dashed var(--e-color-purple);
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  border-radius: 50%;
-}
-.header__container::before {
-  left: 0;
-}
-.header__container::after {
-  right: 0;
 }
 .header__logo {
   margin-top: 20px;
