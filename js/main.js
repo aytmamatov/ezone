@@ -15,18 +15,19 @@ window.addEventListener('scroll', function () {
 });
 
 
-faqPanels.forEach(faqPanel => {
+faqPanels.forEach((faqPanel, idx) => {
   faqPanel.addEventListener('click', (event) => {
     const currentPanel = event.target.closest('.faq__panel')
 
     faqPanels.forEach(panel => {
-      panel.classList.remove('faq__panel--active')
+      panel.classList.remove('faq__panel--active', 'faq__panel--active-color')
       const image = panel?.querySelector('img')
       image.src = './images/faq/plus.svg'
     })
 
     if (currentPanel) {
-      currentPanel.classList.add('faq__panel--active')
+      faqPanels[idx + 1]?.classList.add('faq__panel--active-color')
+      currentPanel.classList.add('faq__panel--active', 'faq__panel--active-color')
       const image = currentPanel?.querySelector('img')
       image.src = './images/faq/minus.svg'
     }
